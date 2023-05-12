@@ -1,0 +1,22 @@
+{
+  "name": "happymh",
+  "version": "1.0",
+  "description": "",
+  "manifest_version": 3,
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://m.happymh.com/*"
+      ],
+      "js": [
+        "content_script/content.js"
+      ]
+    }
+  ]
+}
